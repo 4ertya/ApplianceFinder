@@ -33,7 +33,7 @@ public class ParseTxt {
         try {
             while ((line = document.readLine()) != null) {
 
-                if (line.startsWith(criteria.getGroupSearchName())) {
+                if (line.toUpperCase().startsWith(criteria.getGroupSearchName().toUpperCase())) {
 
                     for (Map.Entry<String, Object> entry : criteria.getCriteria().entrySet()) {
                         String paramRegex = "\\s"+entry.getKey() + "=" + entry.getValue() + "[\\W\\S]";

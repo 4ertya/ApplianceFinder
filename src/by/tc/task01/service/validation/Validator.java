@@ -6,13 +6,13 @@ import by.tc.task01.entity.criteria.SearchCriteria;
 public class Validator {
 
     public static boolean criteriaValidator(Criteria criteria) {
-        switch (criteria.getGroupSearchName()) {
-            case "Oven":
-            case "Laptop":
-            case "Refrigerator":
-            case "Speakers":
-            case "TabletPC":
-            case "VacuumCleaner":
+        switch (criteria.getGroupSearchName().toUpperCase()) {
+            case "OVEN":
+            case "LAPTOP":
+            case "REFRIGERATOR":
+            case "SPEAKERS":
+            case "TABLETPC":
+            case "VACUUMCLEANER":
                 break;
             default:
                 return false;
