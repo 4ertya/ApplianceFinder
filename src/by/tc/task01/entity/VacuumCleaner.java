@@ -97,15 +97,4 @@ public class VacuumCleaner extends Appliance {
         return CLEANING_WIDTH;
     }
 
-    @Override
-    public String toString() {
-        return "VacuumCleaner{" +
-                "POWER_CONSUMPTION=" + POWER_CONSUMPTION +
-                ", FILTER_TYPE='" + FILTER_TYPE + '\'' +
-                ", BAG_TYPE='" + BAG_TYPE + '\'' +
-                ", WAND_TYPE='" + WAND_TYPE + '\'' +
-                ", MOTOR_SPEED_REGULATION=" + MOTOR_SPEED_REGULATION +
-                ", CLEANING_WIDTH=" + CLEANING_WIDTH +
-                '}';
-    }
 }
