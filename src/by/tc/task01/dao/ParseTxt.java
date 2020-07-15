@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
 
 public class ParseTxt {
 
-    private final static String txtDirectory = "D:\\06_JavaST_2020\\ApplienceFinder\\resources\\appliances_db.txt";
+    private final static String txtDirectory = "resources\\appliances_db.txt";
 
 
     public List<String> findLines(Criteria criteria) {
