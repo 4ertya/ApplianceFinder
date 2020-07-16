@@ -12,7 +12,7 @@ public class CreateOvenCommand implements Command {
                 .powerConsumption(Integer.parseInt(params.get("POWER_CONSUMPTION")))
                 .capacity(Integer.parseInt(params.get("CAPACITY")))
                 .depth(Integer.parseInt(params.get("DEPTH")))
-                .height(Integer.parseInt(params.get("HEIGHT")))
+                .height(Double.parseDouble(params.get("HEIGHT")))
                 .weight(Integer.parseInt(params.get("WEIGHT")))
                 .width(Double.parseDouble(params.get("WIDTH")))
                 .build();

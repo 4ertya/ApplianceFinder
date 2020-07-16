@@ -36,7 +36,7 @@ public class ParseTxt {
                 if (line.toUpperCase().startsWith(criteria.getGroupSearchName().toUpperCase())) {
 
                     for (Map.Entry<String, Object> entry : criteria.getCriteria().entrySet()) {
-                        String paramRegex = "\\s"+entry.getKey() + "=" + entry.getValue() + "[\\W\\S]";
+                        String paramRegex = "\\s"+entry.getKey() + "=" + entry.getValue() + "[\\,||\\;]";
                         pattern = Pattern.compile(paramRegex,Pattern.CASE_INSENSITIVE);
                         matcher = pattern.matcher(line);
                         isOk = matcher.find();

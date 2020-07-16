@@ -5,7 +5,7 @@ public class Oven extends Appliance {
     private final int WEIGHT;
     private final int CAPACITY;
     private final int DEPTH;
-    private final int HEIGHT;
+    private final double HEIGHT;
     private final double WIDTH;
 
     private Oven(Builder builder) {
@@ -22,13 +22,13 @@ public class Oven extends Appliance {
         private int weight;
         private int capacity;
         private int depth;
-        private int height;
+        private double height;
         private double width;
 
         public Builder() {
         }
 
-        public Builder(int powerConsumption, int weight, int capacity, int depth, int height, double width) {
+        public Builder(int powerConsumption, int weight, int capacity, int depth, double height, double width) {
             this.powerConsumption = powerConsumption;
             this.weight = weight;
             this.capacity = capacity;
@@ -57,7 +57,7 @@ public class Oven extends Appliance {
             return this;
         }
 
-        public Builder height(int height) {
+        public Builder height(double height) {
             this.height = height;
             return this;
         }
@@ -88,7 +88,7 @@ public class Oven extends Appliance {
         return DEPTH;
     }
 
-    public int getHEIGHT() {
+    public double getHEIGHT() {
         return HEIGHT;
     }
 
